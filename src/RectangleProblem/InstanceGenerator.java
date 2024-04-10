@@ -8,10 +8,8 @@ import java.util.ArrayList;
  * generates instances of the RectangleProblem
  */
 public class InstanceGenerator {
-    RectangleProblem createInstance (int sideLength, int numberRectangles, int maxHeight, int maxWidth) {
-        Box box = new Box(sideLength);
-
-        List<Rectangle> rectangles = new ArrayList<>();
+    RectangleProblem createInstance (int boxSize, int numberRectangles, int maxHeight, int maxWidth) {
+                List<Rectangle> rectangles = new ArrayList<>();
         Random random = new Random();
         for (int i = 0; i < numberRectangles; ++i) {
             int height = random.nextInt(1, maxHeight);
@@ -20,6 +18,6 @@ public class InstanceGenerator {
             rectangles.add(rectangle);
         }
 
-        return new RectangleProblem(box, rectangles);
+        return new RectangleProblem(boxSize, rectangles);
     }
 }

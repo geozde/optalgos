@@ -5,16 +5,16 @@ import java.util.List;
  * Instance of the rectangle problem addressed in this project
  */
 public class RectangleProblem implements ProblemInstance{
-    private final Box box;
+    private final int boxSize;
     private final List<Rectangle> rectangles;
 
-    public RectangleProblem(Box box, List<Rectangle> rectangles) {
-        this.box = box;
+    public RectangleProblem(int boxSize, List<Rectangle> rectangles) {
+        this.boxSize = boxSize;
         this.rectangles = rectangles;
     }
 
-    public Box getBox() {
-        return box;
+    public int getBoxSize() {
+        return boxSize;
     }
 
     public List<Rectangle> getRectangles() {

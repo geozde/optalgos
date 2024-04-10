@@ -9,7 +9,7 @@ import java.util.List;
  */
 public interface Neighborhood {
     ProblemInstance problemInstance = null;
-    public List<Solution> getNeighbors (Solution solution);
+    public List<Solution> getNeighbors (Solution solution) throws Exception;
 
     public Solution createRandomStartingPoint();
 

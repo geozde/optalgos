@@ -13,6 +13,10 @@ public class RuleBasedNeighborhood implements Neighborhood{
 
     }
 
+    public double getValue (RectangleSolution solution) {
+        return solution.getBoxes().size();
+    }
+
     /**
      * returns the list of all neighbors of a given solution
      * @param solution solution to return neighbors of
